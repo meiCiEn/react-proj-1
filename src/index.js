@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { render } from '@testing-library/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Crée le rendu passé dans le render() dans la constante root qui est la div qui porte l'id root
 root.render(
+  // le mode strict est activé par défaut
   <React.StrictMode>
     <App />
   </React.StrictMode>
